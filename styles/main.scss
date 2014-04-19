@@ -12,21 +12,30 @@ body {
   
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
+  color: $spot-color-riff;
+  color: #000;
   }
 
 h1 {
   font-size: 45px;
   margin-bottom: $univ-pad;
   }
+  
+h4 {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+  line-height: 1em;
+  }
 
 
 p {
-  color: #000;
+      color: $text-color;
   font-size: 16px;
   font-weight: 300;
   margin: 0;
-  margin-bottom: 0.5em;
   padding: 0;
+  letter-spacing: 0.015em;
 }
 
 /* Layout Styles *******************/
@@ -40,98 +49,118 @@ p {
   margin:0px auto;
   padding: ($univ-pad * 2) 0;
   }
+  
+#header {margin-bottom: ($univ-pad * 2 )}
 
 #students {
-  margin: ($univ-pad * 1.5) 0 ($univ-pad * 2.5) 0;
+  margin-bottom: ($univ-pad * 4);
   }
   
 .student {
   height:320px-($univ-pad * 1.5);
   width:250px-($univ-pad * 1.5);
   overflow:hidden;
-  position: relative;
+  position: static;
   float:left;
   margin: 0px ($univ-pad * 1.5) ($univ-pad * 1.5) 0px;
-  background-color: #ccc;
+  background-color: $spot-color;
+  background-color: #fff;
+  }
   
-  .overlay {
-    position: absolute;
-    height:350px-($univ-pad * 1.5);
-    width:250px-($univ-pad * 1.5);
-    padding: 0;
-    h4, p {
-      font-size: 26px;
-      font-weight: 400;
-      letter-spacing: 0.015em;
-      line-height: 1em;
-      margin: ($univ-pad*0.66) $univ-pad 0 0;
-      padding:($univ-pad * 0.5)$univ-pad;
-      color: $text-color;
-      }
-    p {
-      font-size: 16px;
-      margin-top:0;
-      padding-top:0;
-      padding-bottom:$univ-pad;      
-      }   
-    .image {
-      img {
-        position: absolute;
-        z-index: 0;
-        height:100%;
-        }  
-      /* img.normal { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }    */
-      }
-    .normal { opacity:1; position: absolute;     
-      transition: $opacity-fade-out;
-      -webkit-transition: $opacity-fade-out;
-      -moz-transition: $opacity-fade-out;
-      h4,p {background-color: rgba($text-bg,0.33);}
-      }    
-    .hovered  { opacity:0; position: absolute;     
-      transition: $opacity-fade-out;
-      -webkit-transition: $opacity-fade-out;
-      -moz-transition: $opacity-fade-out;
-      h4,p {background-color: rgba($text-bg,0.9);}      
-      }
+.student-container {
+  position: relative;
+  height:100%;
+  width:100%;
+  padding: 0;
+  margin:0;
+  h4, p {
+    margin: ($univ-pad * 0.66) $univ-pad 0 0;
+    padding:($univ-pad * 0.75) $univ-pad ($univ-pad * 0.5) $univ-pad;
+    z-index:10;
+    background-color: rgba($text-bg,0.5)
     }
-  .overlay:hover {
-    .normal { 
-      opacity:0;     
-      transition: $opacity-fade;
-      -webkit-transition: $opacity-fade;
-      -moz-transition: $opacity-fade;}    
-    .hovered  { 
-      opacity:1;     
-      transition: $opacity-fade;
-      -webkit-transition: $opacity-fade;
-      -moz-transition: $opacity-fade;}
-    }
+  p {
+    margin-top:0;
+    padding-top:0;
+    padding-bottom: $univ-pad
+    } 
+      
+  .image img {
+      position: absolute;
+      top:0;
+      z-index: 0;
+      height:100%;
 
+      }  
+  img.normal { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }   
+    
+  .coverup {
+    background:linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
+    background:-webkit-linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
+    background:-moz-linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
+    height:100%;
+    width:100%;
+    z-index:5;
+    position: absolute;
+    top:0;
+    }
+    
+  .normal, .hovered {
+    position: absolute;
+    transition: $opacity-fade-out;
+    -webkit-transition: $opacity-fade-out;
+    -moz-transition: $opacity-fade-out;
+    }
+     
+  .hovered  { 
+    opacity:0;       
+    }
     
   .work-links {
     position: absolute;
-    bottom:($univ-pad * 1.25);
-    right:$univ-pad;
+    bottom:$univ-pad;
+    right:($univ-pad * 0.75);
+    z-index:15;
      a {
-      background-color: rgba($link-color-inv,0.33);
-      padding:($univ-pad * 0.3) ($univ-pad * 0.5);
-      margin-right: ($univ-pad * 0.3);
+      /* background-color: rgba($link-color-inv,0.5); */
+      padding:($univ-pad * 0.125) ($univ-pad * 0.25);
       color:$link-color;
+      font-weight: 300;
+      letter-spacing: 0.025em;
       }
-      a:hover { background-color: rgba( $link-color-inv,1); color: rgba( $link-color-spot, 1 ); border-radius: 3px; }
-      a:active { background-color: rgba( $link-color-spot, 1 ); color: rgba( $link-color-inv, 1 ); border-radius: 3px;   }
-      a:focus { background-color: rgba($link-color-inv,0.25); border-radius: 3px; }
+      a:hover { background-color: rgba( $link-color-inv,1); color: rgba( $link-color-spot, 1 ); border-radius: 2px; }
+      a:active { background-color: rgba( $link-color-spot, 1 ); color: rgba( $link-color-inv, 1 ); border-radius: 2px; }
+      a:focus { background-color: rgba($link-color-inv,0.25); border-radius: 2px; }
       a:visited { color:$link-color; }
     }
-
-  }
-
-.student:last-child {
-  margin-bottom:($univ-pad * 4);
+    
   }
   
+.student-container:hover {
+  .normal { 
+    opacity:0;     
+    transition: $opacity-fade;
+    -webkit-transition: $opacity-fade;
+    -moz-transition: $opacity-fade;
+    }    
+  .hovered  { 
+    opacity:1;     
+    transition: $opacity-fade;
+    -webkit-transition: $opacity-fade;
+    -moz-transition: $opacity-fade;
+    }
+  .coverup {
+    background:linear-gradient(-75deg, rgba($grad-color-hover,0)66%, rgba($grad-color-hover,0.75)100%);
+    background:-webkit-linear-gradient(-75deg, rgba($grad-color-hover,0)66%, rgba($grad-color-hover,0.75)100%);
+    background:-moz-linear-gradient(-75deg, rgba($grad-color-hover,0)66%, rgba($grad-color-hover,0.75)100%);
+    }
+  }
 
+a {line-height: 24px;}
+a:hover {}
+a:focus {}
+a:active {}
+a:visited { color:inherit;}
 
 nav {
   width:100%;
@@ -144,7 +173,6 @@ footer {
   width:100%;
   height:76px;
   padding:12px;
-  position: static;
 }
 
 

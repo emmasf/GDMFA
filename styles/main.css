@@ -457,19 +457,27 @@ body {
   font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  color: black;
+  color: #000; }
 
 h1 {
   font-size: 45px;
   margin-bottom: 18px; }
 
+h4 {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+  line-height: 1em; }
+
 p {
-  color: #000;
+  color: black;
   font-size: 16px;
   font-weight: 300;
   margin: 0;
-  margin-bottom: 0.5em;
-  padding: 0; }
+  padding: 0;
+  letter-spacing: 0.015em; }
 
 /* Layout Styles *******************/
 #container {
@@ -480,92 +488,107 @@ p {
   margin: 0px auto;
   padding: 36px 0; }
 
+#header {
+  margin-bottom: 36px; }
+
 #students {
-  margin: 27px 0 45px 0; }
+  margin-bottom: 72px; }
 
 .student {
   height: 293px;
   width: 223px;
   overflow: hidden;
-  position: relative;
+  position: static;
   float: left;
   margin: 0px 27px 27px 0px;
-  background-color: #ccc; }
-  .student .overlay {
-    position: absolute;
-    height: 323px;
-    width: 223px;
-    padding: 0; }
-    .student .overlay h4, .student .overlay p {
-      font-size: 26px;
-      font-weight: 400;
-      letter-spacing: 0.015em;
-      line-height: 1em;
-      margin: 11.88px 18px 0 0;
-      padding: 9px 18px;
-      color: black; }
-    .student .overlay p {
-      font-size: 16px;
-      margin-top: 0;
-      padding-top: 0;
-      padding-bottom: 18px; }
-    .student .overlay .image {
-      /* img.normal { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }    */ }
-      .student .overlay .image img {
-        position: absolute;
-        z-index: 0;
-        height: 100%; }
-    .student .overlay .normal {
-      opacity: 1;
-      position: absolute;
-      transition: opacity 0.25s ease 0s;
-      -webkit-transition: opacity 0.25s ease 0s;
-      -moz-transition: opacity 0.25s ease 0s; }
-      .student .overlay .normal h4, .student .overlay .normal p {
-        background-color: rgba(255, 255, 255, 0.33); }
-    .student .overlay .hovered {
-      opacity: 0;
-      position: absolute;
-      transition: opacity 0.25s ease 0s;
-      -webkit-transition: opacity 0.25s ease 0s;
-      -moz-transition: opacity 0.25s ease 0s; }
-      .student .overlay .hovered h4, .student .overlay .hovered p {
-        background-color: rgba(255, 255, 255, 0.9); }
-  .student .overlay:hover .normal {
-    opacity: 0;
-    transition: opacity 0.5s ease 0s;
-    -webkit-transition: opacity 0.5s ease 0s;
-    -moz-transition: opacity 0.5s ease 0s; }
-  .student .overlay:hover .hovered {
-    opacity: 1;
-    transition: opacity 0.5s ease 0s;
-    -webkit-transition: opacity 0.5s ease 0s;
-    -moz-transition: opacity 0.5s ease 0s; }
-  .student .work-links {
-    position: absolute;
-    bottom: 22.5px;
-    right: 18px; }
-    .student .work-links a {
-      background-color: rgba(255, 255, 255, 0.33);
-      padding: 5.4px 9px;
-      margin-right: 5.4px;
-      color: black; }
-    .student .work-links a:hover {
-      background-color: white;
-      color: #6f00ff;
-      border-radius: 3px; }
-    .student .work-links a:active {
-      background-color: #6f00ff;
-      color: white;
-      border-radius: 3px; }
-    .student .work-links a:focus {
-      background-color: rgba(255, 255, 255, 0.25);
-      border-radius: 3px; }
-    .student .work-links a:visited {
-      color: black; }
+  background-color: #3c00ff;
+  background-color: #fff; }
 
-.student:last-child {
-  margin-bottom: 72px; }
+.student-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  .student-container h4, .student-container p {
+    margin: 11.88px 18px 0 0;
+    padding: 13.5px 18px 9px 18px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.5); }
+  .student-container p {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 18px; }
+  .student-container .image img {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    height: 100%; }
+  .student-container img.normal {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%); }
+  .student-container .coverup {
+    background: linear-gradient(-75deg, rgba(60, 0, 255, 0) 66%, rgba(60, 0, 255, 0.75) 100%);
+    background: -webkit-linear-gradient(-75deg, rgba(60, 0, 255, 0) 66%, rgba(60, 0, 255, 0.75) 100%);
+    background: -moz-linear-gradient(-75deg, rgba(60, 0, 255, 0) 66%, rgba(60, 0, 255, 0.75) 100%);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 0; }
+  .student-container .normal, .student-container .hovered {
+    position: absolute;
+    transition: opacity 0.25s ease 0s;
+    -webkit-transition: opacity 0.25s ease 0s;
+    -moz-transition: opacity 0.25s ease 0s; }
+  .student-container .hovered {
+    opacity: 0; }
+  .student-container .work-links {
+    position: absolute;
+    bottom: 18px;
+    right: 13.5px;
+    z-index: 15; }
+    .student-container .work-links a {
+      /* background-color: rgba($link-color-inv,0.5); */
+      padding: 2.25px 4.5px;
+      color: white;
+      font-weight: 300;
+      letter-spacing: 0.025em; }
+    .student-container .work-links a:hover {
+      background-color: white;
+      color: #3c00ff;
+      border-radius: 2px; }
+    .student-container .work-links a:active {
+      background-color: #3c00ff;
+      color: white;
+      border-radius: 2px; }
+    .student-container .work-links a:focus {
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 2px; }
+    .student-container .work-links a:visited {
+      color: white; }
+
+.student-container:hover .normal {
+  opacity: 0;
+  transition: opacity 0.5s ease 0s;
+  -webkit-transition: opacity 0.5s ease 0s;
+  -moz-transition: opacity 0.5s ease 0s; }
+.student-container:hover .hovered {
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+  -webkit-transition: opacity 0.5s ease 0s;
+  -moz-transition: opacity 0.5s ease 0s; }
+.student-container:hover .coverup {
+  background: linear-gradient(-75deg, transparent 66%, rgba(0, 0, 0, 0.75) 100%);
+  background: -webkit-linear-gradient(-75deg, transparent 66%, rgba(0, 0, 0, 0.75) 100%);
+  background: -moz-linear-gradient(-75deg, transparent 66%, rgba(0, 0, 0, 0.75) 100%); }
+
+a {
+  line-height: 24px; }
+
+a:visited {
+  color: inherit; }
 
 nav {
   width: 100%;
@@ -576,8 +599,7 @@ nav {
 footer {
   width: 100%;
   height: 76px;
-  padding: 12px;
-  position: static; }
+  padding: 12px; }
 
 /** Responsive Styles ******************************************************/
 @media screen and (max-width: 1240px) {
