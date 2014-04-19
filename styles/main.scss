@@ -45,7 +45,7 @@ p {
   }
   
 #page {
-  width:1200px;
+  width:1250px;
   margin:0px auto;
   padding: ($univ-pad * 2) 0;
   }
@@ -57,15 +57,12 @@ p {
   }
   
 .student {
-  height:340px-($univ-pad * 1.5);
-  width:260px-($univ-pad * 1.5);
-  width:19%;
+  height:320px-($univ-pad * 1.5);
+  width:250px-($univ-pad * 1.5);
   overflow:hidden;
-  position: relative;
+  position: static;
   float:left;
   margin: 0px ($univ-pad * 1.5) ($univ-pad * 1.5) 0px;
-  margin: 0px ($univ-pad * 0.33) ($univ-pad * 0.33) 0px;
-  margin: 0px 1% 1% 0px;
   background-color: $spot-color;
   background-color: #fff;
   }
@@ -183,21 +180,11 @@ footer {
 /** Responsive Styles ******************************************************/
 
 @media screen and (max-width: 1240px) {
-  #page { width:960px; } 
-  .student {
-    height:340px-($univ-pad * 1.5);
-    width:24%;
-    margin: 0px 1% 1% 0px;
-    } 
+  #page { width:960px; }  
   }
   
 @media screen and (max-width: 1024px) {
   #page { width:80%; padding: 10%}  
-  .student {
-    height:540px-($univ-pad * 1.5);
-    width:49%;
-    margin: 0px 1% 1% 0px;
-    }
   }
 
 /** @fontface Import ******************************************************/

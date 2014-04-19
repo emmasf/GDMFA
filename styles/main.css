@@ -484,7 +484,7 @@ p {
   height: 100%; }
 
 #page {
-  width: 1200px;
+  width: 1250px;
   margin: 0px auto;
   padding: 36px 0; }
 
@@ -495,15 +495,12 @@ p {
   margin-bottom: 72px; }
 
 .student {
-  height: 313px;
-  width: 233px;
-  width: 19%;
+  height: 293px;
+  width: 223px;
   overflow: hidden;
-  position: relative;
+  position: static;
   float: left;
   margin: 0px 27px 27px 0px;
-  margin: 0px 5.94px 5.94px 0px;
-  margin: 0px 1% 1% 0px;
   background-color: #3c00ff;
   background-color: #fff; }
 
@@ -607,21 +604,11 @@ footer {
 /** Responsive Styles ******************************************************/
 @media screen and (max-width: 1240px) {
   #page {
-    width: 960px; }
-
-  .student {
-    height: 313px;
-    width: 24%;
-    margin: 0px 1% 1% 0px; } }
+    width: 960px; } }
 @media screen and (max-width: 1024px) {
   #page {
     width: 80%;
-    padding: 10%; }
-
-  .student {
-    height: 513px;
-    width: 49%;
-    margin: 0px 1% 1% 0px; } }
+    padding: 10%; } }
 /** @fontface Import ******************************************************/
 @font-face {
   font-family: 'Calibre';
