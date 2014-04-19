@@ -457,7 +457,7 @@ body {
   font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; }
+  font-weight: 400; }
 
 h1 {
   font-size: 45px;
@@ -497,37 +497,40 @@ p {
     width: 223px;
     padding: 0; }
     .student .overlay h4, .student .overlay p {
-      font-size: 36px;
+      font-size: 26px;
       font-weight: 400;
       letter-spacing: 0.015em;
       line-height: 1em;
-      background-color: rgba(255, 255, 255, 0.25);
-      margin: 18px;
-      margin-left: 0;
-      margin-bottom: 0;
-      padding: 9px;
-      padding-left: 18px; }
+      margin: 11.88px 18px 0 0;
+      padding: 9px 18px;
+      color: black; }
     .student .overlay p {
       font-size: 16px;
       margin-top: 0;
       padding-top: 0;
       padding-bottom: 18px; }
-    .student .overlay .image img {
-      position: absolute;
-      z-index: 0;
-      height: 100%; }
+    .student .overlay .image {
+      /* img.normal { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }    */ }
+      .student .overlay .image img {
+        position: absolute;
+        z-index: 0;
+        height: 100%; }
     .student .overlay .normal {
       opacity: 1;
       position: absolute;
       transition: opacity 0.25s ease 0s;
       -webkit-transition: opacity 0.25s ease 0s;
       -moz-transition: opacity 0.25s ease 0s; }
+      .student .overlay .normal h4, .student .overlay .normal p {
+        background-color: rgba(255, 255, 255, 0.33); }
     .student .overlay .hovered {
       opacity: 0;
       position: absolute;
       transition: opacity 0.25s ease 0s;
       -webkit-transition: opacity 0.25s ease 0s;
       -moz-transition: opacity 0.25s ease 0s; }
+      .student .overlay .hovered h4, .student .overlay .hovered p {
+        background-color: rgba(255, 255, 255, 0.9); }
   .student .overlay:hover .normal {
     opacity: 0;
     transition: opacity 0.5s ease 0s;
@@ -541,21 +544,23 @@ p {
   .student .work-links {
     position: absolute;
     bottom: 22.5px;
-    left: 18px; }
+    right: 18px; }
     .student .work-links a {
-      background-color: rgba(255, 255, 255, 0.66);
-      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.33);
       padding: 5.4px 9px;
       margin-right: 5.4px;
       color: black; }
     .student .work-links a:hover {
       background-color: white;
-      color: #6f00ff; }
+      color: #6f00ff;
+      border-radius: 3px; }
     .student .work-links a:active {
       background-color: #6f00ff;
-      color: white; }
+      color: white;
+      border-radius: 3px; }
     .student .work-links a:focus {
-      background-color: rgba(255, 255, 255, 0.25); }
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 3px; }
     .student .work-links a:visited {
       color: black; }
 
