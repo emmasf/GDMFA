@@ -1239,8 +1239,8 @@ or wrap each row of columns in a <div class="row"> */
   top: 0;
   left: 0;
   padding: 0;
-  background: rgba(1, 141, 192, 0.9);
-  color: #fdad32; }
+  background: rgba(194, 237, 219, 0.95);
+  color: #000; }
 
 .hover-caption {
   padding: 9px; }
@@ -1248,22 +1248,20 @@ or wrap each row of columns in a <div class="row"> */
 .cs-style-1 figcaption h3 {
   margin: 0;
   padding: 0;
-  color: #fff; }
+  color: #000; }
 
 .cs-style-1 figcaption a {
-  text-align: center;
   padding: 5px 10px;
   border-radius: 2px;
   display: inline-block;
-  background: #fdad32;
-  color: #fff; }
+  background: #fff;
+  color: #3c00ff; }
 
 /* Individual Caption Styles */
 .cs-style-1 figcaption {
   height: 100%;
   width: 100%;
   opacity: 0;
-  text-align: center;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1305,7 +1303,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Calibre, "Trebuchet MS", sans-serif;
   font-weight: 400;
-  color: #ff600c; }
+  color: #3c00ff; }
 
 h1 {
   font-size: 50px;
@@ -1317,10 +1315,9 @@ h4 {
   font-weight: 500;
   letter-spacing: 0.015em;
   line-height: 1em;
-  margin-top: 11.88px;
+  margin: 9px 0 9px 0;
   color: black;
-  text-transform: uppercase;
-  text-align: center; }
+  text-transform: uppercase; }
 
 p {
   color: black;
@@ -1343,63 +1340,31 @@ p {
   margin-bottom: 72px; }
 
 .student {
-  margin-bottom: 9px; }
+  margin-bottom: 9px;
+  text-align: left; }
 
-.student-container {
-  /* img.normal { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }    */
-  /*
-    .coverup {
-      background:linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
-      background:-webkit-linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
-      background:-moz-linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
-      }
-  */ }
-  .student-container h4, .student-container p {
-    margin: 11.88px 18px 0 0;
-    padding: 13.5px 18px 9px 18px;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.5); }
-  .student-container p {
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 18px;
-    font-size: 16px; }
-  .student-container .work-links {
-    position: absolute;
-    bottom: 18px;
-    right: 13.5px;
-    z-index: 15; }
-    .student-container .work-links a {
-      /* background-color: rgba($link-color-inv,0.5); */
-      padding: 2.25px 4.5px;
-      color: white;
-      font-weight: 300;
-      letter-spacing: 0.025em; }
-    .student-container .work-links a:hover {
-      background-color: white;
-      color: #ff600c;
-      border-radius: 2px; }
-    .student-container .work-links a:active {
-      background-color: #ff600c;
-      color: white;
-      border-radius: 2px; }
-    .student-container .work-links a:focus {
-      background-color: rgba(255, 255, 255, 0.25);
-      border-radius: 2px; }
-    .student-container .work-links a:visited {
-      color: white; }
+.student-container h4, .student-container p {
+  margin: 11.88px 18px 0 0;
+  padding: 13.5px 18px 9px 18px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.5); }
+.student-container p {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 18px;
+  font-size: 16px; }
 
 a {
   line-height: 24px; }
 
 a:hover {
-  color: #ff600c; }
+  color: #3c00ff; }
 
 a:focus {
-  color: #ff600c; }
+  color: #3c00ff; }
 
 a:active {
-  color: #ff600c; }
+  color: #3c00ff; }
 
 a:visited {
   color: inherit; }
@@ -1408,7 +1373,7 @@ nav {
   width: 100%;
   height: 24px;
   padding: 6px 12px;
-  background-color: #e4ede9;
+  background-color: #323232;
   color: #fff; }
   nav a {
     margin-right: 4.5px;

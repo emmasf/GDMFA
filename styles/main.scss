@@ -28,10 +28,9 @@ h4 { /** Name (under pic) **/
   font-weight: 500;
   letter-spacing: 0.015em;
   line-height: 1em;
-  margin-top:  ($univ-pad * 0.66);
+  margin: ($univ-pad * 0.5) 0 ($univ-pad * 0.5) 0;
   color: $text-color;
   text-transform: uppercase;
-  text-align: center;
   }
 
 
@@ -60,6 +59,7 @@ p {
   
 .student {
   margin-bottom:($univ-pad * .5);
+  text-align: left;
   }
   
 .student-container {
@@ -77,36 +77,8 @@ p {
     font-size: 16px;
     } 
  
-  /* img.normal { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }    */
+}
     
-/*
-  .coverup {
-    background:linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
-    background:-webkit-linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
-    background:-moz-linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
-    }
-*/
-    
-    
-  .work-links {
-    position: absolute;
-    bottom:$univ-pad;
-    right:($univ-pad * 0.75);
-    z-index:15;
-     a {
-      /* background-color: rgba($link-color-inv,0.5); */
-      padding:($univ-pad * 0.125) ($univ-pad * 0.25);
-      color:$link-color;
-      font-weight: 300;
-      letter-spacing: 0.025em;
-      }
-      a:hover { background-color: rgba( $link-color-inv,1); color: rgba( $link-color-spot, 1 ); border-radius: 2px; }
-      a:active { background-color: rgba( $link-color-spot, 1 ); color: rgba( $link-color-inv, 1 ); border-radius: 2px; }
-      a:focus { background-color: rgba($link-color-inv,0.25); border-radius: 2px; }
-      a:visited { color:$link-color; }
-    }
-    
-  }
   
 a {line-height: 24px;}
 a:hover {color:$spot-color;}

@@ -17,8 +17,8 @@
 	top: 0;
 	left: 0;
   padding: 0;
-	background: rgba($spot-color-riff,0.9);
-	color: $spot-color-light;
+	background: rgba($spot-color-riff,0.95);
+	color: #000;
 }
 
 .hover-caption {
@@ -28,17 +28,16 @@
 .cs-style-1 figcaption h3 {
 	margin: 0;
 	padding: 0;
-	color: #fff;
+	color: #000;
 }
 
 
 .cs-style-1 figcaption a {
-	text-align: center;
 	padding: 5px 10px;
 	border-radius: 2px;
 	display: inline-block;
-	background: $spot-color-light;
-	color: #fff;
+	background: #fff;
+	color: $spot-color;
 }
 
 /* Individual Caption Styles */
@@ -47,7 +46,6 @@
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	text-align: center;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
