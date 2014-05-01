@@ -45,7 +45,7 @@ p {
 /* Layout Styles *******************/
 
 #container {
-  height:100%;
+  margin-top:($univ-pad * 2 );
   }
   
 #header {margin-bottom: ($univ-pad * 2 )}
@@ -58,8 +58,6 @@ p {
   margin-bottom:($univ-pad * .5);
   background-color: $spot-color;
   background-color: #fff;
-  /* border-top:12px solid black; */
-  border-bottom:10px solid black;
   }
   
 .student-container {
