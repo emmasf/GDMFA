@@ -17,12 +17,15 @@
 	top: 0;
 	left: 0;
   padding: 0;
-	background: rgba($spot-color-riff,0.95);
 	color: #000;
 }
 
+.cs-style-1 figcaption.one {	background: rgba($color-one,0.95);}
+.cs-style-1 figcaption.two {	background: rgba($color-two,0.95);}
+.cs-style-1 figcaption.three {	background: rgba($color-three,0.95);}
+
 .hover-caption {
-  	padding: ($univ-pad * 0.5);
+  	padding: $univ-pad;
   }
 
 .cs-style-1 figcaption h3 {
@@ -64,7 +67,7 @@
 }
 
 .cs-style-1 figcaption h3 {
-	margin-top: 70px;
+	margin-top: ($univ-pad*1);
 }
 
 .cs-style-1 figcaption span {
@@ -72,7 +75,7 @@
 }
 
 .cs-style-1 figcaption a {
-	margin-top: 30px;
+	margin-top:  ($univ-pad*6);
 }
 
 @media screen and (max-width: 31.5em) {

@@ -828,7 +828,7 @@ legend span {
 ================================================== */
 .container {
   position: relative;
-  width: 960px;
+  width: 1024px;
   margin: 0 auto;
   padding: 0; }
 
@@ -837,7 +837,7 @@ legend span {
   float: left;
   display: inline;
   margin-left: 10px;
-  margin-right: 10px; }
+  margin-right: 18px; }
 
 .row {
   margin-bottom: 20px; }
@@ -885,7 +885,7 @@ legend span {
   width: 640px; }
 
 .container .twelve.columns {
-  width: 700px; }
+  width: 760px; }
 
 .container .thirteen.columns {
   width: 760px; }
@@ -1239,11 +1239,19 @@ or wrap each row of columns in a <div class="row"> */
   top: 0;
   left: 0;
   padding: 0;
-  background: rgba(194, 237, 219, 0.95);
   color: #000; }
 
+.cs-style-1 figcaption.one {
+  background: rgba(36, 75, 255, 0.95); }
+
+.cs-style-1 figcaption.two {
+  background: rgba(254, 103, 91, 0.95); }
+
+.cs-style-1 figcaption.three {
+  background: rgba(15, 204, 131, 0.95); }
+
 .hover-caption {
-  padding: 9px; }
+  padding: 18px; }
 
 .cs-style-1 figcaption h3 {
   margin: 0;
@@ -1278,13 +1286,13 @@ or wrap each row of columns in a <div class="row"> */
   transform: translate(5.94px, 5.94px); }
 
 .cs-style-1 figcaption h3 {
-  margin-top: 70px; }
+  margin-top: 18px; }
 
 .cs-style-1 figcaption span {
   display: block; }
 
 .cs-style-1 figcaption a {
-  margin-top: 30px; }
+  margin-top: 108px; }
 
 @media screen and (max-width: 31.5em) {
   .cs-style-1 {
@@ -1296,14 +1304,16 @@ or wrap each row of columns in a <div class="row"> */
 /* Base Text Styles *******************/
 body {
   font-family: Calibre, "Trebuchet MS", sans-serif;
-  line-height: 1.2em;
+  line-height: 1.1em;
   font-weight: 500;
   font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Calibre, "Trebuchet MS", sans-serif;
   font-weight: 400;
-  color: #3c00ff; }
+  color: #3c00ff;
+  line-height: 1em;
+  color: #000; }
 
 h1 {
   font-size: 50px;
@@ -1317,7 +1327,8 @@ h4 {
   line-height: 1em;
   margin: 9px 0 9px 0;
   color: black;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 p {
   color: black;
@@ -1341,7 +1352,8 @@ p {
 
 .student {
   margin-bottom: 9px;
-  text-align: left; }
+  text-align: left;
+  margin-right: 9px; }
 
 .student-container h4, .student-container p {
   margin: 11.88px 18px 0 0;

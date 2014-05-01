@@ -7,7 +7,7 @@
 
 body {
   font-family: Calibre, "Trebuchet MS", sans-serif;
-  line-height: 1.2em;
+  line-height: 1.1em;
   font-weight: 500;
   font-size: 16px;
   }
@@ -16,6 +16,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Calibre, "Trebuchet MS", sans-serif;
   font-weight: 400;
   color: $spot-color;
+    line-height: 1em;
+  color: #000;
   }
 
 h1 {
@@ -31,6 +33,7 @@ h4 { /** Name (under pic) **/
   margin: ($univ-pad * 0.5) 0 ($univ-pad * 0.5) 0;
   color: $text-color;
   text-transform: uppercase;
+  text-align: center;
   }
 
 
@@ -60,6 +63,7 @@ p {
 .student {
   margin-bottom:($univ-pad * .5);
   text-align: left;
+  margin-right: ($univ-pad * .5);
   }
   
 .student-container {
