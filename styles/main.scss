@@ -1,4 +1,5 @@
 @import "normalize";
+@import "skel";
 @import "variables";
 
 /* Base Text Styles *******************/
@@ -46,12 +47,6 @@ p {
   height:100%;
   }
   
-#page {
-  width:1250px;
-  margin:0px auto;
-  padding: ($univ-pad * 2) 0;
-  }
-  
 #header {margin-bottom: ($univ-pad * 2 )}
 
 #students {
@@ -60,11 +55,8 @@ p {
   
 .student {
   height:320px-($univ-pad * 1.5);
-  width:250px-($univ-pad * 1.5);
-  overflow:hidden;
-  position: static;
-  float:left;
-  margin: 0px ($univ-pad * 1.5) ($univ-pad * 1.5) 0px;
+  overflow: hidden;
+  margin-bottom:($univ-pad * .5);
   background-color: $spot-color;
   background-color: #fff;
   /* border-top:12px solid black; */
