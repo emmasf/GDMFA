@@ -1224,45 +1224,41 @@ or wrap each row of columns in a <div class="row"> */
 	    font-weight: normal;
 	    font-style: normal; }
 */
-.grid {
-  margin: 0 auto;
-  text-align: center; }
-
-.grid figure {
+.cs-style-1 figure {
   margin: 0;
   position: relative; }
 
-.grid figure img {
+.cs-style-1 figure img {
   max-width: 100%;
   display: block;
-  position: relative; }
+  position: relative;
+  /*  -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%) */ }
 
-.grid figcaption {
+.cs-style-1 figcaption {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px;
-  background: #2c3f52;
-  color: #ed4e6e; }
+  padding: 0;
+  background: rgba(1, 141, 192, 0.9);
+  color: #fdad32; }
 
-.grid figcaption h3 {
+.hover-caption {
+  padding: 9px; }
+
+.cs-style-1 figcaption h3 {
   margin: 0;
   padding: 0;
   color: #fff; }
 
-.grid figcaption span:before {
-  content: 'by '; }
-
-.grid figcaption a {
+.cs-style-1 figcaption a {
   text-align: center;
   padding: 5px 10px;
   border-radius: 2px;
   display: inline-block;
-  background: #ed4e6e;
+  background: #fdad32;
   color: #fff; }
 
 /* Individual Caption Styles */
-/* Caption Style 1 */
 .cs-style-1 figcaption {
   height: 100%;
   width: 100%;
@@ -1278,10 +1274,10 @@ or wrap each row of columns in a <div class="row"> */
 .no-touch .cs-style-1 figure:hover figcaption,
 .cs-style-1 figure.cs-hover figcaption {
   opacity: 1;
-  -webkit-transform: translate(15px, 15px);
-  -moz-transform: translate(15px, 15px);
-  -ms-transform: translate(15px, 15px);
-  transform: translate(15px, 15px); }
+  -webkit-transform: translate(5.94px, 5.94px);
+  -moz-transform: translate(5.94px, 5.94px);
+  -ms-transform: translate(5.94px, 5.94px);
+  transform: translate(5.94px, 5.94px); }
 
 .cs-style-1 figcaption h3 {
   margin-top: 70px; }
@@ -1293,10 +1289,10 @@ or wrap each row of columns in a <div class="row"> */
   margin-top: 30px; }
 
 @media screen and (max-width: 31.5em) {
-  .grid {
+  .cs-style-1 {
     padding: 10px 10px 100px 10px; }
 
-  .grid li {
+  .cs-style-1 li {
     width: 100%;
     min-width: 300px; } }
 /* Base Text Styles *******************/
@@ -1307,23 +1303,28 @@ body {
   font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: Calibre, "Trebuchet MS", sans-serif;
   font-weight: 400;
-  color: #3c00ff; }
+  color: #ff600c; }
 
 h1 {
   font-size: 50px;
   margin-bottom: 18px; }
 
 h4 {
-  font-size: 32px;
-  font-weight: 400;
+  /** Name (under pic) **/
+  font-size: 15px;
+  font-weight: 500;
   letter-spacing: 0.015em;
   line-height: 1em;
-  color: black; }
+  margin-top: 11.88px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center; }
 
 p {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -1342,9 +1343,7 @@ p {
   margin-bottom: 72px; }
 
 .student {
-  margin-bottom: 9px;
-  background-color: #3c00ff;
-  background-color: #fff; }
+  margin-bottom: 9px; }
 
 .student-container {
   /* img.normal { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }    */
@@ -1378,10 +1377,10 @@ p {
       letter-spacing: 0.025em; }
     .student-container .work-links a:hover {
       background-color: white;
-      color: #3c00ff;
+      color: #ff600c;
       border-radius: 2px; }
     .student-container .work-links a:active {
-      background-color: #3c00ff;
+      background-color: #ff600c;
       color: white;
       border-radius: 2px; }
     .student-container .work-links a:focus {
@@ -1394,13 +1393,13 @@ a {
   line-height: 24px; }
 
 a:hover {
-  color: #3c00ff; }
+  color: #ff600c; }
 
 a:focus {
-  color: #3c00ff; }
+  color: #ff600c; }
 
 a:active {
-  color: #3c00ff; }
+  color: #ff600c; }
 
 a:visited {
   color: inherit; }
@@ -1409,7 +1408,7 @@ nav {
   width: 100%;
   height: 24px;
   padding: 6px 12px;
-  background-color: #000;
+  background-color: #e4ede9;
   color: #fff; }
   nav a {
     margin-right: 4.5px;
