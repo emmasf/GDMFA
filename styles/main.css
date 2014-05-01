@@ -1620,8 +1620,6 @@ p {
   margin-bottom: 72px; }
 
 .student {
-  height: 293px;
-  overflow: hidden;
   margin-bottom: 9px;
   background-color: #3c00ff;
   background-color: #fff;
@@ -1629,12 +1627,14 @@ p {
   border-bottom: 10px solid black; }
 
 .student-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  /* img.normal { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }    */ }
+  /* img.normal { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }    */
+  /*
+    .coverup {
+      background:linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
+      background:-webkit-linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
+      background:-moz-linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
+      }
+  */ }
   .student-container h4, .student-container p {
     margin: 11.88px 18px 0 0;
     padding: 13.5px 18px 9px 18px;
@@ -1645,27 +1645,6 @@ p {
     padding-top: 0;
     padding-bottom: 18px;
     font-size: 16px; }
-  .student-container .image img {
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    height: 100%; }
-  .student-container .coverup {
-    background: linear-gradient(-75deg, transparent 66%, rgba(0, 0, 0, 0.75) 100%);
-    background: -webkit-linear-gradient(-75deg, transparent 66%, rgba(0, 0, 0, 0.75) 100%);
-    background: -moz-linear-gradient(-75deg, transparent 66%, rgba(0, 0, 0, 0.75) 100%);
-    height: 100%;
-    width: 100%;
-    z-index: 5;
-    position: absolute;
-    top: 0; }
-  .student-container .normal, .student-container .hovered {
-    position: absolute;
-    transition: opacity 0.25s ease 0s;
-    -webkit-transition: opacity 0.25s ease 0s;
-    -moz-transition: opacity 0.25s ease 0s; }
-  .student-container .hovered {
-    opacity: 0; }
   .student-container .work-links {
     position: absolute;
     bottom: 18px;
@@ -1690,25 +1669,6 @@ p {
       border-radius: 2px; }
     .student-container .work-links a:visited {
       color: white; }
-
-.student-container:hover .normal {
-  opacity: 0;
-  transition: opacity 0.5s ease 0s;
-  -webkit-transition: opacity 0.5s ease 0s;
-  -moz-transition: opacity 0.5s ease 0s; }
-.student-container:hover .hovered {
-  opacity: 1;
-  transition: opacity 0.5s ease 0s;
-  -webkit-transition: opacity 0.5s ease 0s;
-  -moz-transition: opacity 0.5s ease 0s; }
-.student-container:hover .coverup {
-  background: linear-gradient(-75deg, rgba(60, 0, 255, 0) 66%, rgba(60, 0, 255, 0.75) 100%);
-  background: -webkit-linear-gradient(-75deg, rgba(60, 0, 255, 0) 66%, rgba(60, 0, 255, 0.75) 100%);
-  background: -moz-linear-gradient(-75deg, rgba(60, 0, 255, 0) 66%, rgba(60, 0, 255, 0.75) 100%); }
-.student-container:hover img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%); }
 
 a {
   line-height: 24px; }

@@ -55,8 +55,6 @@ p {
   }
   
 .student {
-  height:320px-($univ-pad * 1.5);
-  overflow: hidden;
   margin-bottom:($univ-pad * .5);
   background-color: $spot-color;
   background-color: #fff;
@@ -65,11 +63,7 @@ p {
   }
   
 .student-container {
-  position: relative;
-  height:100%;
-  width:100%;
-  padding: 0;
-  margin:0;
+
   h4, p {
     margin: ($univ-pad * 0.66) $univ-pad 0 0;
     padding:($univ-pad * 0.75) $univ-pad ($univ-pad * 0.5) $univ-pad;
@@ -82,37 +76,17 @@ p {
     padding-bottom: $univ-pad;
     font-size: 16px;
     } 
-      
-  .image img {
-      position: absolute;
-      top:0;
-      z-index: 0;
-      height:100%;
-
-      }  
+ 
   /* img.normal { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }    */
     
+/*
   .coverup {
     background:linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
     background:-webkit-linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
     background:-moz-linear-gradient(-75deg, rgba($grad-color,0)66%, rgba($grad-color,0.75)100%);
-    height:100%;
-    width:100%;
-    z-index:5;
-    position: absolute;
-    top:0;
     }
+*/
     
-  .normal, .hovered {
-    position: absolute;
-    transition: $opacity-fade-out;
-    -webkit-transition: $opacity-fade-out;
-    -moz-transition: $opacity-fade-out;
-    }
-     
-  .hovered  { 
-    opacity:0;       
-    }
     
   .work-links {
     position: absolute;
@@ -134,27 +108,6 @@ p {
     
   }
   
-.student-container:hover {
-  .normal { 
-    opacity:0;     
-    transition: $opacity-fade;
-    -webkit-transition: $opacity-fade;
-    -moz-transition: $opacity-fade;
-    }    
-  .hovered  { 
-    opacity:1;     
-    transition: $opacity-fade;
-    -webkit-transition: $opacity-fade;
-    -moz-transition: $opacity-fade;
-    }
-  .coverup {
-    background:linear-gradient(-75deg, rgba($grad-color-hover,0)66%, rgba($grad-color-hover,0.75)100%);
-    background:-webkit-linear-gradient(-75deg, rgba($grad-color-hover,0)66%, rgba($grad-color-hover,0.75)100%);
-    background:-moz-linear-gradient(-75deg, rgba($grad-color-hover,0)66%, rgba($grad-color-hover,0.75)100%);
-    }
-  img { -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); }   
-  }
-
 a {line-height: 24px;}
 a:hover {color:$spot-color;}
 a:focus {color:$spot-color;}
