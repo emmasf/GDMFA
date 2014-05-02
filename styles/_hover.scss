@@ -20,12 +20,13 @@
 	color: #000;
 }
 
-.cs-style-1 figcaption.one {	background: rgba($color-one,0.95);}
-.cs-style-1 figcaption.two {	background: rgba($color-two,0.95);}
-.cs-style-1 figcaption.three {	background: rgba($color-three,0.95);}
+.cs-style-1 figcaption.one {	background: $color-one;}
+.cs-style-1 figcaption.two {	background: $color-two;}
+.cs-style-1 figcaption.three {	background: $color-three;}
 
 .hover-caption {
   	padding: $univ-pad;
+/*   	color: #fff; */
   }
 
 .cs-style-1 figcaption h3 {
@@ -40,7 +41,7 @@
 	border-radius: 2px;
 	display: inline-block;
 	background: #fff;
-	color: $spot-color;
+	color: #000;
 }
 
 /* Individual Caption Styles */
@@ -60,10 +61,12 @@
 .no-touch .cs-style-1 figure:hover figcaption,
 .cs-style-1 figure.cs-hover figcaption {
 	opacity: 1;
+/*
 	-webkit-transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
 	-moz-transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
 	-ms-transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
 	transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
+*/
 }
 
 .cs-style-1 figcaption h3 {

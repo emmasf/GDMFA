@@ -35,6 +35,10 @@ h4 { /** Name (under pic) **/
   text-transform: uppercase;
   text-align: center;
   }
+  
+h4 .one {	background: $color-one;}
+h4 .two {	background: $color-two;}
+h4 .three {	background: $color-three;}
 
 
 p {
@@ -65,23 +69,6 @@ p {
   text-align: left;
   margin-right: ($univ-pad * .5);
   }
-  
-.student-container {
-
-  h4, p {
-    margin: ($univ-pad * 0.66) $univ-pad 0 0;
-    padding:($univ-pad * 0.75) $univ-pad ($univ-pad * 0.5) $univ-pad;
-    z-index:10;
-    background-color: rgba($text-bg,0.5)
-    }
-  p {
-    margin-top:0;
-    padding-top:0;
-    padding-bottom: $univ-pad;
-    font-size: 16px;
-    } 
- 
-}
     
   
 a {line-height: 24px;}

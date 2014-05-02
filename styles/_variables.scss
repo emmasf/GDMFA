@@ -2,14 +2,18 @@ $spot-color: rgb(60,0,255); // bright blue
 $spot-color-riff: rgb(194,237,219);  // mint
 $spot-color-dark: rgb(50,50,50);  // dark gray
 
-/*$color-one: rgb(36,75,255);
-$color-two: rgb(254,103,91);
-$color-three: rgb(15,204,131); */
+/*
+$color-one: rgba(36,75,255,0.25);
+$color-two: rgba(254,103,91,0.25);
+$color-three: rgba(15,204,131,0.25);
+*/
 
+$transp-02: 0.666;
+$transp-01: 0.9;
 
-$color-one: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#00ff44), color-stop(100%,#00ffd1));
-$color-two: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#ee6cfe), color-stop(100%,#fd4b8e));
-$color-three: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#7556fe), color-stop(100%,#30adfe)); 
+$color-one: -webkit-gradient(linear, left bottom, right top, color-stop(0%, (rgba(0,255,68,$transp-01))), color-stop(100%, (rgba(0,255,209, $transp-02)))); 
+$color-two: -webkit-gradient(linear, left bottom, right top, color-stop(0%, (rgba(238,108,254,$transp-01))), color-stop(100%, (rgba(255,108,254, $transp-02)))); 
+$color-three: -webkit-gradient(linear, left bottom, right top, color-stop(0%, (rgba(48,175,252, $transp-01))), color-stop(100%, (rgba(178,86,254,$transp-02)))); 
 
 
 
