@@ -1,0 +1,536 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.mynav{
+	background-color:#FFF;
+	border:none;
+	height:68px;
+	padding-top:8px;
+	}
+	
+.rightnav{
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:11px;
+	}	
+
+.hide {
+  display: none;
+}
+
+#one{
+	width:100%;
+	height:780px;
+	background:url(links/welcome.png) no-repeat bottom fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+
+.about{
+	width:100%;
+	height:auto;
+	background-color:#FF3E0B;
+	font-size:35px;
+	font-weight:300;
+	line-height:48px;
+	letter-spacing:1px;
+	text-align:left;
+	color:#FFF;
+	padding:7%;
+	}
+	
+	
+#two{
+	width:100%;
+	height:auto;
+	background-color:#EDEDED;
+	}
+	
+	
+#twoessay{
+	width:100%;
+	height:auto;
+	background-color:#FFF;
+	}	
+#three{
+	background-size:100%;
+	width:100%;
+	height:697px;
+	background-color:#EDEDED;
+	}
+
+
+.threetitle{
+	position:absolute;
+	font-size:32px;
+	color:#FFF;
+	letter-spacing:0.3px;
+	line-height:34px;
+	font-weight:600;
+	padding:100px 0px 0px 0px;
+	z-index:10;
+	text-align:center;
+	}
+
+.threecopy{
+	position:absolute;
+	font-size:22px;
+	color:#666;
+	letter-spacing:0.3px;
+	line-height:34px;
+	font-weight:400;
+	padding:15% 15% 0px 15%;
+	z-index:10;
+	text-align:center
+	}
+
+.threecopy h1 {
+	font-size:50px;
+	font-weight:400;
+	padding-bottom:10px;
+	}
+	
+.threetwo{
+	background-color:#F33;
+	z-index:10;
+	color:#FFF;
+	font-size:40px;
+	font-weight:300;
+	letter-spacing:1px;
+	text-align:left;
+	padding:7%;
+	}
+	
+.threesketch{
+	background-color:#FFF;
+	z-index:10;
+	color:#FFF;
+	font-size:40px;
+	font-weight:300;
+	letter-spacing:1px;
+	text-align:left;
+	}
+	
+.threebachnote{
+	background-color:#F2F2F2;
+	z-index:10;
+	color:#FFF;
+	font-size:40px;
+	font-weight:300;
+	letter-spacing:1px;
+	text-align:left;
+	padding:7%;
+	}
+	
+#essaysection{
+	width:100%;
+	height:auto;
+	background-color:#EDEDED;
+	}
+
+.hair{
+	background-color:#FFFF;
+	z-index:10;
+	color:#FFF;
+	font-size:40px;
+	font-weight:300;
+	letter-spacing:1px;
+	text-align:left;
+	padding-top:7%;
+	padding-bottom:7%;
+	padding-right:2%;
+	padding-left:2%;
+	}	
+	
+.threefivecomposers{
+	background-color:#FFF;
+	z-index:10;
+	color:#FFF;
+	font-size:40px;
+	font-weight:300;
+	letter-spacing:1px;
+	text-align:left;
+	padding:7%;
+	}
+.threethree{
+	height:700px;
+	background-color:#CCC;
+	z-index:10;
+	color:#FFF;
+	font-size:40px;
+	font-weight:300;
+	letter-spacing:1px;
+	text-align:left;
+	padding:7%;
+	}
+
+.threefour{
+	background-color:#39F;
+	z-index:10;
+	color:#FFF;
+	font-size:40px;
+	font-weight:300;
+	letter-spacing:1px;
+	text-align:left;
+	padding:7%;
+	}
+
+.threeone{
+	width:100%;
+	height:780px;
+	background:url(links/letsplay.png) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+	
+#four{
+	width:100%;
+	height:auto;
+	}
+	
+.fourcopy{
+	position:absolute;
+	font-size:22px;
+	color:#666;
+	letter-spacing:0.3px;
+	line-height:34px;
+	font-weight:400;
+	padding:15% 15% 0px 15%;
+	z-index:10;
+	text-align:center
+	}
+
+.fourcopy h1 {
+	font-size:50px;
+	font-weight:400;
+	padding-bottom:10px;
+	}
+
+.fourphoto{
+	width:100%;
+	height:780px;
+	background:url(links/posters.png) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+	
+.fourtwo{
+	background-color:#1DC600;
+	z-index:10;
+	color:#FFF;
+	font-size:40px;
+	font-weight:300;
+	letter-spacing:1px;
+	text-align:left;
+	padding:7%;
+	}
+	
+.fourthree{
+	width:100%;
+	background-color:#EDEDED;
+	padding:7%;
+	}
+
+.fourbodycopytitle{
+	color:#F60;
+	font-size:26px;
+	letter-spacing:0.75px;
+	font-weight:100;
+	text-align:left;
+	padding:0px 50px 0px 50px;
+	}
+	
+.fourbodycopy{
+	color:#666;
+	font-size:16px;
+	font-weight:300;
+	letter-spacing:0.5px;
+	text-align:left;
+	padding:35px 50px 0px 50px;
+	}
+	
+.composerhair{
+	width:100%;
+	height:500px;
+	background-color:#666;
+	padding:7%;
+	}
+	
+.composercarousel{
+	padding:7%;
+	}
+	
+.fourcarousel{
+	background-size:100%;
+	background-color:#FFF;
+	padding:100px 0px 100px 0px;
+	}
+	
+.fingeringcharts{
+	background-color:#00B449;
+	color:#FFF;
+	font-size:40px;
+	font-weight:300;
+	letter-spacing:1px;
+	text-align:left;
+	padding:7%;
+	
+	}
+.fingeringchartsposters{
+	height:auto;
+	max-width:100%;
+	vertical-align: middle;
+	background-color:#FFF;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-right:10px;
+	padding-left:10px;	
+	}
+	
+.fingeringchartsposters{
+	height:auto;
+	max-width:100%;
+	vertical-align: middle;
+	background-color:#FFF;
+	padding-top:3%;
+	padding-bottom:3%;
+	padding-right:20px;
+	padding-left:20px;	
+	}
+	
+.keys{
+	height:auto;
+	max-width:100%;
+	vertical-align: middle;
+	background-color:#FFF;
+	padding:0px;
+	}	
+.thisisjustforspace{
+	width:100%;
+	height:300px;
+	background-color:#CCC;
+	}
+	
+#five{
+	background-size:100%;
+	width:100%;
+	height:697px;
+	background-color:#EDEDED;
+	}
+	
+#six{
+	width:100%;
+	background-color:rgba(84, 83, 83, 1);
+	}
+	
+.sixcopy{
+	padding-top:50px;
+	padding-bottom:50px;
+	font-weight:200;
+	font-size:14px;
+	color:#FFF;
+	line-height:20px;
+	letter-spacing:.5px;
+	}
+
+#six a{
+	color:#FFF;
+	text-decoration: none;
+	}
+	
+#six a:hover{
+	color:#F03;
+	text-decoration:none;
+	}
+	
+.twocolumncopy{
+	color:#666;
+	font-size:16px;
+	line-height:25px;
+	font-weight:300;
+	letter-spacing:0.7px;
+	text-align:left;
+	padding:35px 50px 0px 50px;	
+	}
+
+.twocolumntitle{
+	color:#F60;
+	font-size:26px;
+	letter-spacing:0.75px;
+	font-weight:100;
+	text-align:left;
+	padding:0px 50px 0px 50px;
+	}
+	
+	
+.largeimagea{
+	background-color:#FFF;
+	color:#FFF;
+	padding-top:40px;
+	padding-bottom:40px;
+	}
+
+.dividera{
+	background-color:#0090CA;
+	z-index:10;
+	color:#FFF;
+	font-size:35px;
+	font-weight:300;
+	letter-spacing:1px;
+	text-align:left;
+	padding:5%;	
+	}
+	
+.largeimageb{
+	width:100%;
+	height:780px;
+	background:url(links/process3.png) no-repeat top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+	
+
+
+.largeimagec{
+	width:100%;
+	height:780px;
+	background:url(links/inspiration.png) no-repeat top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}	
+	
+
+	
+		
+.onetitle{
+	font-size:22px;
+	line-height:34px;
+	font-weight:600;
+	padding:100px 0px 0px 90px;
+	letter-spacing:0.5px;
+	}
+	
+.essay{
+	padding:0px 0px 70px 0px;
+	}
+
+.essayintro{
+	font-size:23px;
+	letter-spacing:0.3px;
+	line-height:34px;
+	font-weight:600;
+	padding:100px 70px 0px 90px;	
+	}
+	
+.essaybody{
+	font-size:16px;
+	letter-spacing:0.3px;
+	line-height:27px;
+	font-weight:300;
+	padding:10px 70px 0px 90px;	
+	}
+		
+.read-more-show{
+	font-size:22px;
+	letter-spacing:0.3px;
+	line-height:34px;
+	font-weight:600;
+	padding:0px 0px 0px 90px;
+	}
+	
+
+	
+.processcopy{
+	position:absolute;
+	font-size:18px;
+	color:#FFF;
+	letter-spacing:0.3px;
+	line-height:26px;
+	font-weight:600;
+	z-index:10;
+	text-align:left;
+	padding-top:30%;
+	padding-right:20%;
+	padding-bottom:0px;
+	padding-left:105px;
+	}
+	
+	
+	
+hr{
+	background:#CCC;
+	width:90%;
+	height:.3px;
+	}	
+
+/* Carousel background image*/
+.carousel-control.right,.carousel-control.left {
+	width:5%;
+	background-image:none;
+	}
+	
+html, body {
+	height:100%;
+	margin:0;
+	padding:0;
+}
+.carousel, .item, .active {
+	height:100%;
+}
+.carousel-inner {
+	height:100%;
+}
+.carousel {
+	margin-bottom: 0px;
+}
+.carousel-caption {
+	z-index: 10;
+}
+.carousel .item {
+	background-color: #FFF;
+}
+.carousel .carousel-inner .bg {
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.carousel .carousel-inner .bg1 {
+	background-image:url(bach.png);
+	background-position: center center;
+}
+.carousel .carousel-inner .bg2 {
+	background-image:url(mozart.png);
+	background-position: center center;
+}
+.carousel .carousel-inner .bg3 {
+	background-image:url(beethoven.png);
+	background-position: center center;
+}
+
+.carousel .carousel-inner .bg4 {
+	background-image:url(links/exhibition1.png);
+	background-position: center center;
+}
+.carousel .carousel-inner .bg5 {
+	background-image:url(links/exhibition2.png);
+	background-position: center center;
+}
+.carousel .carousel-inner .bg6 {
+	background-image:url(links/exhibition3.png);
+	background-position: center center;
+}
+/*Carousel background image ends*/
+
+		
+a:hover{
+	text-decoration: none;
+	}
