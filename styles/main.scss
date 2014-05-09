@@ -25,6 +25,11 @@ h1 {
   margin-bottom: $univ-pad;
   }
   
+h3 {
+  font-size: 32px;
+  margin-bottom: $univ-pad;
+  }
+  
 h4 { /** Name (under pic) **/
   font-size: 15px;
   font-weight: 500;
@@ -49,8 +54,9 @@ p {
   padding: 0;
   letter-spacing: 0.015em;
   line-height: 1.125em;
-  #header { max-width: 80%;} 
 }
+
+#header p { max-width: 80%;} 
 
 /* Layout Styles *******************/
 
@@ -100,7 +106,25 @@ footer {
 
 /** Responsive Styles ******************************************************/
 
+@media screen and (max-width: 1024px) {
+  #page { width:960px; }  
+  }
+  
+  
+  @media screen and (max-width: 980px) {
+  #page { width:80%; padding: 10%}  
+  }
+  
+
 @media screen and (max-width: 760px) {
+  h4 {font-size: 13px;}
+  .cs-style-1 figcaption h3 {font-size: 22px; margin-top: 0;}
+  #header p {max-width: 90%;}
+  }
+  
+
+
+@media screen and (max-width: 480px) {
   .cs-style-1 figure {
     width:220px;
     margin: 0px auto;
@@ -111,21 +135,6 @@ footer {
   h1 {font-size: 37px;}
   
   }
-  
-@media screen and (min-width: 761px) {
-  h4 {font-size: 13px;}
-  .cs-style-1 figcaption h3 {font-size: 22px; margin-top: 0;}
-  #header p {max-width: 90%;}
-  }
-  
-@media screen and (min-width: 981px) {
-  #page { width:80%; padding: 10%}  
-  }
-  
-@media screen and (min-width: 1025px) {
-  #page { width:960px; }  
-  }
-
   
     
 
