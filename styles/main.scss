@@ -72,10 +72,10 @@ p {
     
   
 a {line-height: 24px;}
-a:hover {color:$spot-color;}
-a:focus {color:$spot-color;}
+a:focus, a:visited {color:$spot-color;}
 a:active {color:$spot-color;}
-a:visited {color:inherit;}
+a:hover {color:$spot-color;}
+
 
 nav {
   width:100%;
