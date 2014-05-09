@@ -1080,7 +1080,7 @@ legend span {
 /* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
   .container {
-    width: 300px; }
+    width: 220px; }
 
   .container .columns,
   .container .column {
@@ -1105,7 +1105,7 @@ legend span {
   .container .sixteen.columns,
   .container .one-third.column,
   .container .two-thirds.column {
-    width: 300px; }
+    width: 220px; }
 
   /* Offsets */
   .container .offset-by-one,
@@ -1129,7 +1129,7 @@ legend span {
 /* Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    width: 420px; }
+    width: 220px; }
 
   .container .columns,
   .container .column {
@@ -1154,7 +1154,7 @@ legend span {
   .container .sixteen.columns,
   .container .one-third.column,
   .container .two-thirds.column {
-    width: 420px; } }
+    width: 220px; } }
 /* #Clearing
 ================================================== */
 /* Self Clearing Goodness */
@@ -1237,7 +1237,7 @@ $color-three: rgba(15,204,131,0.25);
   max-width: 100%;
   display: block;
   position: relative;
-  /*  -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%) */ }
+  /*  -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); */ }
 
 .cs-style-1 figcaption {
   position: absolute;
@@ -1247,13 +1247,13 @@ $color-three: rgba(15,204,131,0.25);
   color: #000; }
 
 .cs-style-1 figcaption.one {
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0, 255, 68, 0.9)), color-stop(100%, rgba(0, 255, 209, 0.666))); }
+  background: rgba(42, 238, 186, 0.65); }
 
 .cs-style-1 figcaption.two {
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(238, 108, 254, 0.9)), color-stop(100%, rgba(255, 108, 254, 0.666))); }
+  background: rgba(254, 86, 82, 0.65); }
 
 .cs-style-1 figcaption.three {
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(48, 175, 252, 0.9)), color-stop(100%, rgba(178, 86, 254, 0.666))); }
+  background: rgba(59, 170, 247, 0.65); }
 
 .hover-caption {
   padding: 18px;
@@ -1262,6 +1262,7 @@ $color-three: rgba(15,204,131,0.25);
 .cs-style-1 figcaption h3 {
   margin: 0;
   padding: 0;
+  margin-bottom: 6px;
   color: #000; }
 
 .cs-style-1 figcaption a {
@@ -1269,7 +1270,12 @@ $color-three: rgba(15,204,131,0.25);
   border-radius: 2px;
   display: inline-block;
   background: #fff;
-  color: #000; }
+  color: #000;
+  position: absolute;
+  bottom: 22.5px; }
+
+.cs-style-1 figcaption a.button02 {
+  left: 95px !important; }
 
 /* Individual Caption Styles */
 .cs-style-1 figcaption {
@@ -1283,15 +1289,13 @@ $color-three: rgba(15,204,131,0.25);
   -moz-transition: -moz-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s; }
 
-.no-touch .cs-style-1 figure:hover figcaption,
-.cs-style-1 figure.cs-hover figcaption {
-  opacity: 1;
-  /*
-  	-webkit-transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
-  	-moz-transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
-  	-ms-transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
-  	transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
-  */ }
+.no-touch .cs-style-1 figure:hover figcaption, .cs-style-1 figure.cs-hover figcaption {
+  opacity: 1; }
+
+.no-touch .cs-style-1 figure:hover img, .cs-style-1 figure.cs-hover img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 .cs-style-1 figcaption h3 {
   margin-top: 18px; }
@@ -1299,9 +1303,11 @@ $color-three: rgba(15,204,131,0.25);
 .cs-style-1 figcaption span {
   display: block; }
 
+/*
 .cs-style-1 figcaption a {
-  margin-top: 108px; }
-
+	margin-top:  ($univ-pad*6);
+}
+*/
 @media screen and (max-width: 31.5em) {
   .cs-style-1 {
     padding: 10px 10px 100px 10px; }
@@ -1339,13 +1345,13 @@ h4 {
   text-align: center; }
 
 h4 .one {
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0, 255, 68, 0.9)), color-stop(100%, rgba(0, 255, 209, 0.666))); }
+  background: rgba(42, 238, 186, 0.65); }
 
 h4 .two {
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(238, 108, 254, 0.9)), color-stop(100%, rgba(255, 108, 254, 0.666))); }
+  background: rgba(254, 86, 82, 0.65); }
 
 h4 .three {
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(48, 175, 252, 0.9)), color-stop(100%, rgba(178, 86, 254, 0.666))); }
+  background: rgba(59, 170, 247, 0.65); }
 
 p {
   color: black;
@@ -1354,8 +1360,9 @@ p {
   margin: 0;
   padding: 0;
   letter-spacing: 0.015em;
-  line-height: 1.125em;
-  max-width: 66%; }
+  line-height: 1.125em; }
+  p #header {
+    max-width: 80%; }
 
 /* Layout Styles *******************/
 #container {
@@ -1391,8 +1398,8 @@ nav {
   width: 100%;
   height: 24px;
   padding: 6px 12px;
-  background-color: #323232;
-  color: #fff; }
+  background-color: #f0f0f0;
+  color: #000; }
   nav a {
     margin-right: 4.5px;
     font-weight: 300;
@@ -1407,13 +1414,40 @@ footer {
   padding: 12px; }
 
 /** Responsive Styles ******************************************************/
-@media screen and (max-width: 1240px) {
-  #page {
-    width: 960px; } }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 760px) {
+  .cs-style-1 figure {
+    width: 220px;
+    margin: 0px auto; }
+
+  .cs-style-1 figcaption h3 {
+    font-size: 28px;
+    margin-top: 18px; }
+
+  div.student h4 {
+    margin-bottom: 18px; }
+
+  #header p {
+    max-width: 100%; }
+
+  h1 {
+    font-size: 37px; } }
+@media screen and (min-width: 761px) {
+  h4 {
+    font-size: 13px; }
+
+  .cs-style-1 figcaption h3 {
+    font-size: 22px;
+    margin-top: 0; }
+
+  #header p {
+    max-width: 90%; } }
+@media screen and (min-width: 981px) {
   #page {
     width: 80%;
     padding: 10%; } }
+@media screen and (min-width: 1025px) {
+  #page {
+    width: 960px; } }
 /** @fontface Import ******************************************************/
 @font-face {
   font-family: 'Calibre';

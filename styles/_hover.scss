@@ -9,7 +9,7 @@
 	max-width: 100%;
 	display: block;
 	position: relative;
-	/*  -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%) */; 
+	/*  -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); */
 }
 
 .cs-style-1 figcaption {
@@ -32,6 +32,7 @@
 .cs-style-1 figcaption h3 {
 	margin: 0;
 	padding: 0;
+	margin-bottom: 6px;
 	color: #000;
 }
 
@@ -42,7 +43,14 @@
 	display: inline-block;
 	background: #fff;
 	color: #000;
-}
+	position: absolute;
+	bottom: ($univ-pad*1.25);
+	
+
+	
+	}
+	
+.cs-style-1 figcaption a.button02 { left: 95px !important; }
 
 /* Individual Caption Styles */
 
@@ -58,15 +66,14 @@
 	transition: transform 0.3s, opacity 0.3s;
 }
 
-.no-touch .cs-style-1 figure:hover figcaption,
-.cs-style-1 figure.cs-hover figcaption {
+.no-touch .cs-style-1 figure:hover figcaption, .cs-style-1 figure.cs-hover figcaption {
 	opacity: 1;
-/*
-	-webkit-transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
-	-moz-transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
-	-ms-transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
-	transform: translate(($univ-pad * 0.33), ($univ-pad * 0.33));
-*/
+}
+
+.no-touch .cs-style-1 figure:hover img, .cs-style-1 figure.cs-hover img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .cs-style-1 figcaption h3 {
@@ -77,9 +84,11 @@
 	display: block;
 }
 
+/*
 .cs-style-1 figcaption a {
 	margin-top:  ($univ-pad*6);
 }
+*/
 
 @media screen and (max-width: 31.5em) {
 	.cs-style-1 {

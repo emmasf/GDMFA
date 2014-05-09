@@ -49,7 +49,7 @@ p {
   padding: 0;
   letter-spacing: 0.015em;
   line-height: 1.125em;
-  max-width: 66%;
+  #header { max-width: 80%;} 
 }
 
 /* Layout Styles *******************/
@@ -82,7 +82,7 @@ nav {
   height:24px;
   padding:6px 12px;
   background-color: $spot-color-dark;
-  color:#fff;
+  color:#000;
   a {
     margin-right: ($univ-pad * 0.25); 
     font-weight: 300;
@@ -104,13 +104,35 @@ footer {
 
 /** Responsive Styles ******************************************************/
 
-@media screen and (max-width: 1240px) {
-  #page { width:960px; }  
+@media screen and (max-width: 760px) {
+  .cs-style-1 figure {
+    width:220px;
+    margin: 0px auto;
+    }
+  .cs-style-1 figcaption h3 {font-size: 28px; margin-top: 18px;}
+  div.student h4 {margin-bottom: 18px;}
+  #header p {max-width: 100%;}
+  h1 {font-size: 37px;}
+  
   }
   
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 761px) {
+  h4 {font-size: 13px;}
+  .cs-style-1 figcaption h3 {font-size: 22px; margin-top: 0;}
+  #header p {max-width: 90%;}
+  }
+  
+@media screen and (min-width: 981px) {
   #page { width:80%; padding: 10%}  
   }
+  
+@media screen and (min-width: 1025px) {
+  #page { width:960px; }  
+  }
+
+  
+    
+
 
 /** @fontface Import ******************************************************/
 @font-face {

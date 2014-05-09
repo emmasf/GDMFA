@@ -1,6 +1,6 @@
 $spot-color: rgb(60,0,255); // bright blue
 $spot-color-riff: rgb(194,237,219);  // mint
-$spot-color-dark: rgb(50,50,50);  // dark gray
+$spot-color-dark: rgb(240,240,240);  // dark gray
 
 /*
 $color-one: rgba(36,75,255,0.25);
@@ -8,15 +8,25 @@ $color-two: rgba(254,103,91,0.25);
 $color-three: rgba(15,204,131,0.25);
 */
 
-$transp-02: 0.666;
-$transp-01: 0.9;
+$transp-01: 0.65;
+$transp-02: 0.65 ;
 
-$color-one: -webkit-gradient(linear, left bottom, right top, color-stop(0%, (rgba(0,255,68,$transp-01))), color-stop(100%, (rgba(0,255,209, $transp-02)))); 
-$color-two: -webkit-gradient(linear, left bottom, right top, color-stop(0%, (rgba(238,108,254,$transp-01))), color-stop(100%, (rgba(255,108,254, $transp-02)))); 
-$color-three: -webkit-gradient(linear, left bottom, right top, color-stop(0%, (rgba(48,175,252, $transp-01))), color-stop(100%, (rgba(178,86,254,$transp-02)))); 
-
-
-
+$color-one: -webkit-gradient(linear, right bottom, left top, color-stop(0%, (rgba(0,255,68,$transp-01))), color-stop(100%, (rgba(0,255,209, $transp-02)))); // greenish
+$color-two: -webkit-gradient(linear, right bottom, left top, color-stop(0%, (rgba(238,108,254,$transp-01))), color-stop(100%, (rgba(255,108,254, $transp-02)))); // redish
+$color-three: -webkit-gradient(linear, right bottom, left top, color-stop(0%, (rgba(48,175,252, $transp-01))), color-stop(100%, (rgba(178,86,254,$transp-02)))); // blueish
+$color-one: -webkit-gradient(linear, right bottom, right top, color-stop(0%, (rgba(64,229,187,$transp-01))), color-stop(100%, (rgba(185,247,201, $transp-02))));  // greenish
+$color-two: -webkit-gradient(linear, right bottom, right top, color-stop(0%, (rgba(255,91,30,$transp-01))), color-stop(100%, (rgba(254,169,172, $transp-02))));  // redish
+$color-three: -webkit-gradient(linear, right bottom, right top, color-stop(0%, (rgba(0,160,244, $transp-01))), color-stop(100%, (rgba(172,188,254,$transp-02))));  // blueish
+$color-one: rgba(48,255,0, $transp-02);  // greenish
+$color-two: rgba(255,66,0, $transp-02);  // redish
+$color-three: rgba(0,255,255,$transp-02);  // blueish
+$color-one: rgba(65,229,187, $transp-01);  // greenish
+$color-two: rgba(254,140,120, $transp-01);  // redish
+$color-three: rgba(64,169,248,$transp-01);  // blueish
+$color-one: rgba(42,238,186, $transp-02);  // greenish
+$color-two: rgba(254,139,105, $transp-02);  // redish
+$color-two: rgba(254,86,82, $transp-02);  // redish
+$color-three: rgba(59,170,247,$transp-02);  // blueish
 
 
 $link-color: rgb(255,255,255);
