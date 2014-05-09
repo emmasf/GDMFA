@@ -72,7 +72,7 @@ p {
     
   
 a {line-height: 24px;}
-a:focus, a:visited {color:$spot-color;}
+a:focus {color:$spot-color;}
 a:active {color:$spot-color;}
 a:hover {color:$spot-color;}
 
@@ -87,10 +87,6 @@ nav {
     margin-right: ($univ-pad * 0.25); 
     font-weight: 300;
     font-size: 14px;
-    }
-  a:first-child {
-    text-decoration: none;
-    cursor:pointer;
     }
   }
 

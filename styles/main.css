@@ -1366,7 +1366,7 @@ p {
 a {
   line-height: 24px; }
 
-a:focus, a:visited {
+a:focus {
   color: #3c00ff; }
 
 a:active {
@@ -1385,9 +1385,6 @@ nav {
     margin-right: 4.5px;
     font-weight: 300;
     font-size: 14px; }
-  nav a:first-child {
-    text-decoration: none;
-    cursor: pointer; }
 
 footer {
   width: 100%;
