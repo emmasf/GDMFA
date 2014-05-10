@@ -1,0 +1,411 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/** Top bar linking back to all theses **/
+
+#gdmfa { 
+  width:100%;
+  background-color: #eee; /** Background color of the bar. You can change this. **/
+  z-index: 500;
+  }
+
+#gdmfa p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;  /** Typeface. You can change this. **/
+    color: #000;  /** Text color. You can change this **/
+    font-size: 12px;  
+    font-weight: 700;
+    line-height: 24px; ; 
+    padding: 6px 12px;
+    margin: 0;
+    text-align: left;
+    }
+    
+#gdmfa p a { text-decoration:underline; }  /** Makes the link underlined. Change it to "none" if you don't want that. **/
+#gdmfa p a:hover { color: #0088FF; }  /** Link color when the user mouses over it. You can change this. **/
+#gdmfa p a:focus, #gdmfa p a:active { color: #0026FF; }  /** Link color when the user clicks on it. You can change this. **/
+#gdmfa p a:visited { color: #000; }  /** Link color when it's been clicked before. You can change this.  **/
+
+
+
+/*video begin */
+
+.videotext{  font-family: 'Open Sans', sans-serif;
+             font-size:15px;
+       letter-spacing:2px;
+             margin-top:30px;
+       margin-bottom: 30px;
+            text-align:center;}   
+      
+           
+/*video end */
+
+
+.myIframe {
+  height: inherit;
+}
+
+.iFrameHeight {
+  height: 650px;
+}
+
+.pdfStyle {
+  width: 100%;
+  height: 100%;
+  
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video iframe,  
+.video object,  
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.flex-video {
+position: relative;
+padding-top: 25px;
+padding-bottom: 67.5%;
+height: 0;
+margin-bottom: 16px;
+overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+.flex-video { padding-top: 0; }
+}
+
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height padding: 0 0 60px; */
+  text-align: center;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.secBreak {
+  padding:20px;
+  color:rgba(255,255,255,.8);
+  
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+#myCarousel {
+  height: 600px;
+  overflow: hidden;
+}
+#myCarousel  .item {
+  height: 600px;
+  background-color:#bbb;
+}
+
+#myCarousel img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 100%;
+  min-height: 600px;
+  min-width: 1200px;
+}
+
+
+#wrap  .container {
+  padding: 0px 15px 0px 0px;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+.chart {
+  margin: 10px;
+  padding: 30px 0px 30px 0px;
+  width: 90%;
+}
+
+#footer {
+  background-color:#414141;
+}
+
+#footer a {
+  color:#efefef;
+}
+
+header {
+  background: #333;
+  color:#555;
+}
+
+header .dropdown-menu {
+  top:74px;
+  background: #ffcc33;
+  border-width:0;
+}
+
+h1 {
+  font-size:50px;
+}
+
+h2 .a {
+  cursor: default;
+}
+
+.logo {
+  font-size:60px;
+  position:absolute;
+  z-index:1200;
+  color:#ccc;
+  top:420px;
+  text-align:left;
+  width:70%;
+  opacity: 80;
+}
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+
+#footer > .container {
+  
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+  
+.navbar-nav {
+  margin: 1px 1px; 
+}  
+  
+/* customize nav style */
+.navbar-custom {
+    background-color: #2e2e2e;
+	font-weight:700;
+    text-transform:uppercase;
+    border-width:0;
+}
+.navbar-custom  .navbar-nav>li>a {
+	color: #ddd;
+}
+.navbar-custom  .dropdown-menu li>a:hover {
+	color: #eee;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+	background-color: #000;
+}
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+	border-top-color: #999;
+	border-bottom-color: #999;
+}
+
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+	outline:0;
+}
+
+.divider {
+	height:0px;
+}
+
+@media screen and (max-width: 760px) {
+  /* for max-width screens and below do this */
+  .divider {
+    /* mobile background image */
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 640px)  {
+  /* for max-width screens and below do this */
+  .page-header h1 {
+  font-size: 230%;
+}
+
+.bg-1 {
+  background: url('../images/bgs/3-sm.png') no-repeat center center fixed; 
+}
+
+.bg-2 {
+  background: url('../images/bgs/2-sm.png') no-repeat center center fixed; 
+}
+
+.bg-3 {
+  background: url('../images/bgs/1-sm.png') no-repeat center center fixed; 
+}
+}
+
+@media only screen and (max-device-width: 640px)  {
+  /* for max-width screens and below do this */
+  .page-header h1 {
+  font-size: 230%;
+}
+}
+
+@media only screen and (max-width: 480px) {
+  /* for max-width screens and below do this */
+  .page-header h1 {
+    font-size: 190%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+   /* for max-width screens and below do this */
+  .page-header h1 {
+   font-size: 190%;
+  }
+}
+
+.panel {
+	border-width:0;
+  background-color: rgba(5,5,5,.8);
+  color:#ccc;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+	header {
+	
+	}
+}
+
+#map-canvas {
+  	width: 100%; 
+  	height: 300px;
+	margin: 0;
+	padding: 15px;
+}
+
+.scroll-top {
+   position:fixed;
+   margin-top: 0px;
+   padding-top: 0px;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #f2f3f2;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#222;
+} 
+ 
+
+section {
+  min-height: 400px;
+  height: 100%;
+  padding-top: 130px;
+  padding-bottom: 70px;
+}
+
+.bg-1 {
+	background: url('../images/bgs/3.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-2 {
+	background: url('../images/bgs/2.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-3 {
+	background: url('../images/bgs/1.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+.panel .img-responsive {
+	min-height:270px;
+    max-height:270px;
+}
