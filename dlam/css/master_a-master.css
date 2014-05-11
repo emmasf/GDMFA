@@ -1,11 +1,3 @@
-#u1649
-{
-	border-style: none;
-	border-color: transparent;
-	background-color: #000000;
-	position: fixed;
-}
-
 #menuu1650
 {
 	border-style: none;
@@ -153,6 +145,14 @@
 .MenuItem /* unifiedNavBar */
 {
 	cursor: pointer;
+}
+
+#u1649
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #000000;
+	position: fixed;
 }
 
 #u1585
