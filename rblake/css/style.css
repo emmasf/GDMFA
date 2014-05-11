@@ -1,0 +1,412 @@
+/* CUSTOM STYLES */
+
+@font-face {
+    font-family: 'AkzidenzGroteskBE-Md';
+    src: url('font/AkzidenzGroteskBE-Md.eot');
+    src: url('font/AkzidenzGroteskBE-Md.eot?#iefix') format('embedded-opentype'),
+         url('font/AkzidenzGroteskBE-Md.woff') format('woff'),
+         url('font/AkzidGroBEMd') format('truetype'),
+         url('font/AkzidenzGroteskBE-Md.svg#AkzidenzGroteskBE-Md') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'AkzidenzGroteskBE-Md', helvetica, arial, sans-serif;
+	width:100%;
+	height:100%;
+	background:#c2c3c5; 
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;        
+}
+	}
+
+.slides {z-index:1 !important}
+
+
+#one.slides {
+	background-color: #0f2cff;
+}
+  
+#two.slides {
+	background-color: #c2c3c5;
+}
+  
+#three.slides {
+	background-color: #f66c00;
+}
+
+#four.slides {
+	background: #0e2cfe url(../img/gradient2-22.png) center top no-repeat;
+}
+
+#five.slides {
+	background-color: #c2c3c5;
+}
+
+.slides * { position: relative; }
+
+.slideshow1,
+.slideshow2,
+.controls {
+	top: 200px;
+	left: 170px;
+	width: 800px;
+}
+
+
+
+.controls a {
+	top: 30px;
+	font-size: 30px;
+	color: #ffffff;
+	text-shadow: 1px 1px 20px rgba(0,0,0,0.72);
+	font-weight: normal;
+	text-decoration: none;
+	
+}
+
+.controls a:hover {
+	cursor: pointer;
+	color: #0f2cff;
+	
+}
+
+#next1, #next2 {
+	
+	margin-left: 750px;
+}
+
+
+
+
+.video {
+	padding-top: 200px;
+	padding-left: 400px;
+	
+	
+}
+
+.blob {
+	width: 650px;
+	height: 550px;
+	
+	position: absolute;
+	z-index: 1;
+	margin-top: -540px;
+	left: -250px;
+	
+	
+	
+}
+
+/* LETTERING JS RELATED... CUSTOMIZE KERNING ON MAIN TITLE! */
+
+.fancy_title span {
+  vertical-align: top;
+}
+
+.fancy_title .char2 {
+  margin-left: 0.05em;
+}
+
+
+
+
+/* NAV STYLES */
+.sitenav {
+    position: fixed;
+    width: 150px;
+    z-index: 100;
+    top: 0;
+    left: 0px;
+    display: block;
+    font-size:1rem;
+    font-weight: normal;
+    font-style: normal;
+    width: 100%;
+    
+    }
+
+.sitenav nav ul{
+    background: rgba(255,255,255,1);
+    height:30px; /* ÇÇ THIS IS THE INITIAL HEIGHT Ñ WHERE IT ONLY SAYS CONTENT -- OF THE NAV MENU **/
+    overflow: hidden;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    color: #f66c00;
+    padding-top:5px;
+    padding-right: 10px;
+    list-style: none;
+	z-index: 100;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.30);
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.sitenav nav a,
+.sitenav nav a:link,
+.sitenav nav a:visited {
+    color: #f66c00;
+    text-transform:lowercase;
+    line-height:1.25rem;
+    width: 105%;
+    display:block;
+    padding:5px;
+    color:#f66c00;
+    text-decoration:none;
+    padding-left:10px;
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.sitenav nav ul:hover {
+    height: 184px; /* ÇÇ THIS IS THE FINAL ÒDROPPED DOWNÓ HEIGHT OF THE MENU CHANGE IF NECESSARRY **/
+   
+    }
+
+.sitenav nav h3 {
+    font-family:"AkzidenzGroteskBE-Md", "AkzidenzGroteskBE-Md", helvetica, arial, sans-serif;
+    text-transform:lowercase;
+    margin-top: -5px;
+    font-size:1rem;
+    padding-left:10px;
+    margin-bottom:-5px;
+    font-weight: normal;
+    font-style: normal;
+    }
+    
+.sitenav nav ul a:hover,
+.sitenav nav ul a:active,
+.sitenav nav ul a:focus {
+    background: rgba(255,255,255,1);
+    color: #0f2cff;
+    width: 106%;
+    padding-left:-20px;
+    font-weight: normal;
+    font-style: normal;
+    }
+    
+
+
+/* HEADER STYLES */
+
+h1 {
+	
+	font-size: 105px;
+	color: #ffffff;
+	margin: 0px 0px 0px 220px;
+	padding-top: 250px;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.30);
+	z-index: 100;
+	font-weight: normal;
+	
+}
+
+h2 {
+	
+	font-size: 23px;
+	color: #ffffff;
+	padding-top: 23px;
+	margin-left: 223px;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.30);
+	line-height: 120%;
+	letter-spacing: 1px;
+	font-weight: normal;
+	z-index: 100;
+	
+}
+
+h2.RB {
+	
+	text-shadow: none;
+	z-index: 100;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.30);
+	
+	
+}
+
+
+h4 {
+	font-size: 40px;
+	color: #ffffff;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.30);
+	font-weight: normal;
+	letter-spacing: 1px;
+	}
+
+.lead {
+	
+	font-size: 22px;
+	color:#ffffff;
+	line-height: 150%;
+	font-weight: normal;
+	width: 700px;
+	
+}
+
+.essay a.more,
+.essay a.less {
+	font-size: 12px;
+  color: #f66c00;
+  text-decoration: none;	
+}
+
+.essay a.more:hover,
+.essay a.less:hover {
+  color: white;
+}
+
+
+.essaybody {
+	
+	font-size: 16px;
+	color:#ffffff;
+	line-height: 140%;
+	font-weight: normal;
+	width: 625px;
+}
+
+
+.infobody{
+	
+	font-size: 13px;
+	color:#ffffff;
+	padding-top: 10px;
+	line-height: 140%;
+	width: 200px;
+	font-weight: normal;
+}
+
+.essay {
+	
+	padding-top: 250px;
+}
+
+.callout {
+	padding-top: 70px;
+	margin-left: -400px;
+	line-height: 130%;
+	position: fixed;
+		
+}
+
+.callout2 {
+	padding-top: 280px;
+	margin-left: -400px;
+	line-height: 140%;
+	position: fixed;
+		
+}
+
+.callout3 {
+	padding-top: 20px;
+	margin-left: -400px;
+	line-height: 140%;
+	position: fixed;
+		
+}
+
+
+.callout4 {
+	padding-top: 40px;
+	margin-left: -400px;
+	line-height: 140%;
+	position: fixed;
+		
+}
+
+.callout5 {
+	padding-top: 110px;
+	margin-left: -400px;
+	line-height: 140%;
+	position: fixed;
+		
+}
+
+.callout6 {
+	padding-top: 85px;
+	margin-left: -400px;
+	line-height: 140%;
+	position: fixed;
+		
+}
+
+
+.callout7 {
+	padding-top: 260px;
+	margin-left: -400px;
+	line-height: 140%;
+	position: fixed;
+		
+}
+
+
+
+.callout8 {
+	padding-top: 90px;
+	margin-left: -400px;
+	line-height: 140%;
+	position: fixed;
+		
+}
+
+.pcallout {
+	font-size: 13px;
+	color:#f66c00;
+	font-weight: normal;
+		
+}
+
+.copyright {
+	
+	background-color: #c2c3c5;
+	width: 350px;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	font-size: 15px;
+	
+}
+
+.copyright a {
+	
+	color: #0f2cff;
+}
+
+
+.copyright a:hover {
+	
+	color: white;
+	text-decoration: none;
+}
+
+
+/* THESIS 2014 NAV BAR */
+div#gdmfa { 
+  width: 200px;;
+  background-color: #0f2cff; /** Background color of the bar. You can change this. **/
+  z-index: 101 !important;
+  position: absolute;
+  top:0;
+  right:12px;
+  }
+
+#gdmfa p {
+    font-family: 'AkzidenzGroteskBE-Md', Helvetica, Arial, sans-serif;  /** Typeface. You can change this. **/
+    color: #f66c00;  /** Text color. You can change this **/
+    font-size: 12px;  
+    line-height: 24px; ; 
+    padding: 6px 12px;
+    margin: 0;
+    text-align: right;
+    }
+    
+#gdmfa p a { text-decoration: none; color: white;  }  /** Makes the link underlined. Change it to "none" if you don't want that. **/
+#gdmfa p a:hover { color: #f66c00; }  /** Link color when the user mouses over it. You can change this. **/
+#gdmfa p a:focus, #gdmfa p a:active { color: white; }  /** Link color when the user clicks on it. You can change this. **/
+#gdmfa p a:visited { color: white; }  /** Link color when it's been clicked before. You can change this.  **/
