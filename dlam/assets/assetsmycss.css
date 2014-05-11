@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#gdmfa p {
+    font-family: ‘Helvetica Neue’, Helvetica, Arial, sans-serif;  /** Typeface. You can change this. **/
+    color: #000;  /** Text color. You can change this **/
+    font-size: 12px;  
+    font-weight: 700;
+    line-height: 24px; ; 
+    padding: 6px 12px;
+    margin: 0;
+    text-align: left;
+    }
+    
+#gdmfa p a { text-decoration:underline; }  /** Makes the link underlined. Change it to “none” if you don’t want that. **/
+#gdmfa p a:hover { color: #0088FF; }  /** Link color when the user mouses over it. You can change this. **/
+#gdmfa p a:focus, #gdmfa p a:active { color: #0026FF; }  /** Link color when the user clicks on it. You can change this. **/
+#gdmfa p a:visited { color: #000; }  /** Link color when it’s been clicked before. You can change this.  **/
