@@ -2,8 +2,8 @@
   <folder name="css">
     <file name="site_global.css" crc="492630344"/>
     <file name="master_a-master.css" crc="528281157" ref="index"/>
-    <file name="index.css" crc="264292555" ref="index"/>
-    <file name="iefonts_index.css" crc="207266659" ref="index"/>
+    <file name="index.css" crc="4148587461" ref="index"/>
+    <file name="iefonts_index.css" crc="4168619138" ref="index"/>
   </folder>
   <folder name="assets">
     <file name="assetsmycss.css" crc="394700596" mt="1399780540000"/>
@@ -52,5 +52,5 @@
     <file name="type_poster.jpg" crc="292990985" ref="index"/>
     <file name="loading.gif" crc="3815509949" ref="index"/>
   </folder>
-  <file name="index.html" crc="3903649704" mt="1399840873672"/>
+  <file name="index.html" crc="203710700" mt="1399843934616"/>
 </manifest>
