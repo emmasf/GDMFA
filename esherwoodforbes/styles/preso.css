@@ -1,0 +1,49 @@
+html, body {
+  background-color: #555;
+  height: 1200px; }
+
+#hands {
+  position: fixed;
+  top: 21px;
+  left: 50%;
+  margin-left: -553px;
+  width: 1103px;
+  height: 1200px;
+  padding: 0;
+  overflow: hidden; }
+  #hands img {
+    width: 100%; }
+  #hands button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.25); }
+    #hands button a:hover, #hands button a:active {
+      text-decoration: none; }
+
+#iFramer {
+  background-color: #fff;
+  position: fixed;
+  top: 99px;
+  left: 50%;
+  margin-left: -256px;
+  height: 682px;
+  width: 512px;
+  padding: 0;
+  overflow: hidden; }
+  #iFramer iframe {
+    border: none;
+    width: 768px;
+    height: 1024px; }
+  #iFramer #scalediFrame {
+    zoom: 1;
+    -moz-transform: scale(0.668);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.668);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.668);
+    -webkit-transform-origin: 0 0; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #scaled-frame {
+    zoom: 1; } }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>White as Snow: the iPad experience</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<link href="styles/preso.css" rel="stylesheet" type="text/css" />
+	<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(document).onload(function() {
+     $("body").css("display", "none"); 
+     $("body").fadeIn(450); 
+     $("#iFramer").css("display", "none"); 
+     $("#iFramer").fadeIn(600); 
+     $("a").click(function(event){
+         event.preventDefault();
+         linkLocation = this.href; 
+         $("#iFramer").fadeOut(600); 
+         $("#hands").fadeOut(450); 
+         $("body").fadeOut(300, redirectPage);     
+      });         
+     function redirectPage() {
+         window.location = linkLocation;
+     }
+ });
+ </script>
+</head>
+
+<body>
+
+  
+
+  <div id="hands">
+    <button><a href="index.html">About</a></button>
+    <img src="img/web-hands.svg">
+  </div>
+
+	<div id="iFramer">
+  	<iframe src="http://emmasf.github.io/whiteassnow" id="scalediFrame"></iframe>
+	</div>
+
+
+
+<!-- Livereload REMOVE BEFORE LAUNCH ---------------------------->	
+<!--
+<script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+-->
+
+</body>
+</html>
