@@ -105,35 +105,42 @@ button {
   padding:8px 9px 6px 9px;
   margin-top: 30px;
   background: $button-color;
-  border: 0;
+    border: 0;
   border-radius: $border-radius;
   -moz-border-radius:  $border-radius;
   -webkit-border-radius:  $border-radius;
   -o-border-radius:  $border-radius;
+      font-family: $sans;
   
   a, li a {
     font-size: $small-text;
     font-weight: 700;
-    font-family: $sans;
     text-decoration: none;  
     color: $button-color-active;
+    color:#fff;
     background: rgba(0,0,0,0);
     }
     
   a:hover, li a:hover { background: rgba(0,0,0,0); }
-  a:visited {color: $button-color-active;}
+  a:visited {color: $button-color-active; color:#fff;}
   
   }
   
 button.big {
   padding:24px 36px 18px 36px;
-  margin-top: 30px;
-  a { font-size: 24px; }
+  padding:24px 36px 18px 36px;
+  margin-top: 60px;
+  -moz-animation: textcolormorph 3s infinite ease-in-out;
+  -webkit-animation: textcolormorph 3s infinite ease-in-out;
+  animation: textcolormorph 3s infinite ease-in-out;
+  animation-duration: 3s;
+  a { font-size: 24px; letter-spacing: 0.5px; font-weight: 600; text-rendering: optimizeLegibility;}
+  width:50%;
   }
   
   
 button:hover {
-  background: $button-color-hover;
+  background: $link-color;
   a {color:#fff;}
   }
   
@@ -161,7 +168,7 @@ button:focus, button:active {
   letter-spacing: 1px; 
    a {color: #000;}
     }
-  a.active {color:red; text-decoration: none}
+  a.active {color:rgba(238,49,41,1); text-decoration: none}
   padding-left:90px;
   padding-top: 150px;
   }

@@ -45,13 +45,19 @@
 </nav>
 
 	<div id="page">	
-		<div class="twelve columns">
+		<div class="eleven columns">
 			<h1>White as snow.</h1>
-			<h3>An experiment in digital narrative.</h3>
-                <p><i>White as Snow</i> is an interactive book for adults. Historical context, sociological analysis, and visual surprise mix with more traditional text-based narrative to shed light on the Grimm's classic tale. The project is an exploration of new possibilities for editorial content in the digital world. Rather than say more, I'll let you see for yourself:</p>
+			<!-- <h3>An experiment in digital narrative.</h3> -->
+                <p><i>White as snow</i> is an experiment in digital narrative. This interactive book for adults mixes historical context, sociological analysis, and visual surprise mix with more traditional text-based narrative to shed light on the Grimm's classic tale. Rather than say more, I'll let you see for yourself.</p>
         <button class="big"><a href="viewer.html" target="_blank" >View the App</a></button>
 		</div>
-		<div class="three columns">
+		<!-- <div class="five columns"> -->
+		<div class="three columns offset-by-one">
+		  <!-- <img src="img/end-drawn.svg" style="margin-top:-55px;"> -->
+		  <!-- <img src="img/begin-drawn.svg"> -->
+		  <div id="spin" class="interactive_3d middle">
+    <img src="img/spin/model_1.png">
+  </div> 
 		</div>
 	</div>
 		
@@ -190,6 +196,23 @@
 <!-- Begin Javascript ----------------------------------------------->
 <!------------------------------------------------------------------->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Spinner --------------------->
+<script type="text/javascript" src="js/jquery.interactive_3d.js"></script>
+<script>
+  $(document).ready( function() {
+    $("#spin").interactive_3d({
+      frames: 136,
+      cursor: "move",
+      speed: 0,
+      entrance: false,
+      preloadImages: true,
+      touchSupport: true,
+      loading: "",
+      autoPlay: false, 
+    });
+  });		
+</script>
 
 <script>  
     $(window).scroll(function(){

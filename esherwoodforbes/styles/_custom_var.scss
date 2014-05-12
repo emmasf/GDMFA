@@ -43,6 +43,19 @@ $rule: 8px solid $light-grey-accent;
 
 $padding: 8px;
 
+$blue: rgb(2,111,195);
 
+@-webkit-keyframes textcolormorph {
+0%    {background: rgba($blue,0.8);}
+20%   {background: rgba($blue,0.8);}
+50%   {background: rgba(102,15,255,0.8);}
+80%   {background: rgba($blue,0.8)}
+100%  {background: rgba($blue,0.8);}
+}
+
+
+$animate-in: 1s ease 0.75s both;
+$animate-out: 1s ease 0s both;
+$animate-in-fast: 0.33s ease 1s both;
 
 
