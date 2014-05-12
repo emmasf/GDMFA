@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Emma Sherwood-Forbes -- Designer and Developer -- @sherwoodandforbes
+    Ben Kutil -- Professor -- @benkutil
+
+# THANKS
+
+    Shout out to the excellent and generous makers that help this designer write code:
+    HTML 5 Boilerplate -- http://html5boilerplate.com/
+    Twitter Bootstrap -- http://getbootstrap.com/2.3.2/
+    LiveReload -- http://livereload.com/
+    Normalize.css -- http://necolas.github.io/normalize.css/
+    Modernizr -- http://modernizr.com/
+    JQuery -- http://jquery.com/
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript
