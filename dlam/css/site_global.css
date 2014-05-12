@@ -81,25 +81,25 @@ a
 a:link
 {
 	color: #FFFFFF;
-	text-decoration: underline;
+	text-decoration: inherit;
 }
 
 a:visited
 {
 	color: #FFFFFF;
-	text-decoration: underline;
+	text-decoration: inherit;
 }
 
 a:hover
 {
 	color: #FFFF00;
-	text-decoration: underline;
+	text-decoration: inherit;
 }
 
 a:active
 {
 	color: #FFFF00;
-	text-decoration: underline;
+	text-decoration: inherit;
 }
 
 a.nontext /* used to override default properties of 'a' tag */

@@ -1,19 +1,16 @@
 <manifest alg="2" build="751" opt="false" iceEnabled="true">
   <folder name="css">
-    <file name="site_global.css" crc="492630344"/>
-    <file name="master_a-master.css" crc="3915760169" ref="index"/>
-    <file name="index.css" crc="277242361" ref="index"/>
-    <file name="iefonts_index.css" crc="4168619138" ref="index"/>
-  </folder>
-  <folder name="assets">
-    <file name="assetsmycss.css" crc="394700596" mt="1399780540000"/>
+    <file name="site_global.css" crc="535096279"/>
+    <file name="master_a-master.css" crc="4114455755" ref="index"/>
+    <file name="index.css" crc="486603555" ref="index"/>
+    <file name="iefonts_index.css" crc="42870593" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="3828297711" ref="index"/>
     <file name="museutils.js" crc="3885830161" ref="index"/>
     <file name="jquery.tobrowserwidth.js" crc="4262060562" ref="index"/>
-    <file name="jquery.musemenu.js" crc="32367222" ref="index"/>
     <file name="jquery.scrolleffects.js" crc="496362122" ref="index"/>
+    <file name="jquery.musemenu.js" crc="32367222" ref="index"/>
     <file name="webpro.js" crc="4369767" ref="index"/>
     <file name="musewpslideshow.js" crc="83045620" ref="index"/>
     <file name="jquery.museoverlay.js" crc="3925244142" ref="index"/>
@@ -25,32 +22,32 @@
     <file name="parent_photoscan-140223-0003.png" crc="120501072" ref="index"/>
     <file name="parent_photoscan-140223-0002.png" crc="4132233803" ref="index"/>
     <file name="parent_photoscan-140223-0012.png" crc="280991034" ref="index"/>
-    <file name="parent_photoscan-140223-0004.jpg" crc="4127341226" ref="index"/>
     <file name="parent_photoscan-140223-0013.png" crc="92478214" ref="index"/>
+    <file name="parent_photoscan-140223-0004.jpg" crc="4127341226" ref="index"/>
     <file name="refugee_scan-131030-0002.jpg" crc="338560538" ref="index"/>
     <file name="parent_docscan-140222-0032.jpg" crc="3875311236" ref="index"/>
-    <file name="parent_docscan-140222-0019.png" crc="67501641" ref="index"/>
+    <file name="parent_docscan-140222-0019-u139.png" crc="4110523153" ref="index"/>
     <file name="parent_docscan-140222-0027.png" crc="345414978" ref="index"/>
     <file name="refugee_scan-131030-0059.jpg" crc="6682751" ref="index"/>
     <file name="refugee_scan-131030-0057.jpg" crc="3933564182" ref="index"/>
     <file name="parent_docscan-140222-0050.png" crc="3762672989" ref="index"/>
     <file name="family.jpg" crc="462622884" ref="index"/>
     <file name="img_1272.jpg" crc="4194501559" ref="index"/>
-    <file name="_mg_6448-u1578.jpg" crc="102268962" ref="index"/>
+    <file name="img_6448-u1578.jpg" crc="102268962" ref="index"/>
     <file name="img_1275.jpg" crc="3947508749" ref="index"/>
-    <file name="_mg_6439-u1138.jpg" crc="495872417" ref="index"/>
-    <file name="_mg_6457-u1552.jpg" crc="86947387" ref="index"/>
-    <file name="_mg_6524.jpg" crc="5443723" ref="index"/>
+    <file name="img_6439-u1138.jpg" crc="495872417" ref="index"/>
+    <file name="img_6457-u1552.jpg" crc="86947387" ref="index"/>
+    <file name="img_6524.jpg" crc="5443723" ref="index"/>
     <file name="img_6231.jpg" crc="289161369" ref="index"/>
     <file name="img_1346.jpg" crc="4100334094" ref="index"/>
     <file name="img_1345.jpg" crc="4284299870" ref="index"/>
-    <file name="type_poster4.jpg" crc="486301941" ref="index"/>
-    <file name="blank.gif" crc="4208392903" ref="index"/>
-    <file name="type_poster3.jpg" crc="223669006" ref="index"/>
-    <file name="type_poster2.jpg" crc="3935317018" ref="index"/>
     <file name="type_poster5.jpg" crc="61039855" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="type_poster2.jpg" crc="3935317018" ref="index"/>
+    <file name="type_poster3.jpg" crc="223669006" ref="index"/>
+    <file name="type_poster4.jpg" crc="486301941" ref="index"/>
     <file name="type_poster.jpg" crc="292990985" ref="index"/>
     <file name="loading.gif" crc="3815509949" ref="index"/>
   </folder>
-  <file name="index.html" crc="3892403072" mt="1399849178864"/>
+  <file name="index.html" crc="239035953" mt="1399867991270"/>
 </manifest>
