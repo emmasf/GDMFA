@@ -693,7 +693,6 @@ textarea {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -1352,9 +1351,9 @@ button {
     text-decoration: none;
     color: #0073bd;
     color: #fff;
-    background: rgba(0, 0, 0, 0); }
+    background: transparent; }
   button a:hover, button li a:hover {
-    background: rgba(0, 0, 0, 0); }
+    background: transparent; }
   button a:visited {
     color: #0073bd;
     color: #fff; }
