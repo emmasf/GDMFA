@@ -8,6 +8,21 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<link href="styles/preso.css" rel="stylesheet" type="text/css" />
 	<script src="js/vendor/jquery-1.10.2.min.js"></script>
+	
+	<style>
+	   a.about {
+	   text-align:center; 
+	   color:#000;
+	   position: fixed;
+	   top: 890px;
+	   width: 200px;   
+	   left: 50%; 
+	   margin-left: -100px; 
+     }
+     a.about:hover {
+	   color:#fff;}
+	</style>
+	
 <script type="text/javascript">
 $(document).onload(function() {
      $("body").css("display", "none"); 
@@ -33,13 +48,19 @@ $(document).onload(function() {
   
 
   <div id="hands">
-    <button><a href="index.html">About</a></button>
     <img src="img/web-hands.svg">
   </div>
+  
+  
 
 	<div id="iFramer">
   	<iframe src="http://emmasf.github.io/whiteassnow" id="scalediFrame"></iframe>
 	</div>
+	
+
+	<a href="index.html" class="about" target="_blank">
+    About this Project</a>
+
 
 
 </body>
